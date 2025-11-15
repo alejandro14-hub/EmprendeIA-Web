@@ -5,7 +5,8 @@ on:
     branches:
       - main
     paths:
-      - "public/**"  # solo ejecuta el deploy si hay cambios dentro de /public
+      - "public/**"   # Solo si hay cambios dentro de /public se ejecutará el deploy
+
 
 jobs:
   build_and_deploy:
