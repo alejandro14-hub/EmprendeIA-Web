@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EmprendeIA 🚀</title>
+</head>
+<body>
+  <h1>Bienvenido a EmprendeIA</h1>
+  <p>Conexión lista con Firebase Hosting + Firestore + Auth</p>
+
+ <script type="module">
+  // ✅ Importar módulos de Firebase (versión moderna)
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js";
+  import { getFirestore } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore.js";
+  import { getAuth } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-auth.js";
+
+  // 🔐 Tu configuración de Firebase
+  const firebaseConfig = {
+  apiKey: "AIzaSyAgSPMXUVdKfGLb91DZNnwlt2tvfKGD7M8",
+  authDomain: "studio-3959207469-af070.firebaseapp.com",
+  projectId: "studio-3959207469-af070",
+  storageBucket: "studio-3959207469-af070.firebasestorage.app",
+  messagingSenderId: "397859853053",
+  appId: "1:397859853053:web:73ad74ce7739c91d6ae494"
+  };
+
+  // 🔧 Inicializar Firebase
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+  const auth = getAuth(app);
+
+  console.log("✅ Firebase conectado correctamente");
+</script>
